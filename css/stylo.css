@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+/*Fuente de texto*/
+:root{
+    --font-primary:'DM Serif Display', serif;
+    --font-secondary: 'IBM Plex Serif', serif;
+}
+/*Colores*/
+:root{
+    --font-color: #f7fff7 ;
+    --color-primary: #1a1e23 ;
+    --color-secondary: #8a2819 ; 
+}
+
+/* Navegador*/
+
+header .bg-menu {
+    background: var(--color-primary);
+    font-family: var(--font-primary);
+}
+
+.bg-menu .nav-link{
+color: var(--font-color);
+font-weight: 400;
+transition: all 0.3s ease;
+}
+
+.bg-menu .nav-link:hover{
+    transform: translateY(-3%);
+    border-bottom: 4px solid var(--color-secondary);
+}
+
+header .navbar-brand{
+    font-weight: 600;
+    color: var(--font-color);
+    text-transform: uppercase;
+}
+
+header .navbar-brand span{
+    color: var(--color-secondary);
+}
+
+header .btn{
+    padding: 8px 9px;
+    background: var(--color-secondary);
+    color: white;
+    border: 0;
+    transition: all .3s;
+}
+
+ header .btn:hover{
+    color: #134074;
+    background-color: aliceblue;
+}
+
+/*Seccion carrusel*/
+.carrusel .texto-inicio{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    
+}
+
+.carrusel .texto-inicio h3{
+    background: rgba(26, 30, 35, 0.714);
+    font-size: 30px;
+    font-family: var(--font-primary);
+    text-transform: uppercase;
+}
+.carrusel .texto-inicio p{
+    font-family: var(--font-primary);
+    font-size: 40px; 
+    background: rgba(26, 30, 35, 0.714);
+    border-radius: 20px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Estilo cuerpo*/
+ 
+body{
+    width: 100%;
+    background: var(--color-primary)
+}
+
+.cartas {
+    font-family: var(--font-secondary);
+    padding: 20px;
+}
+
+.cartas h5{
+    text-align: center;
+    font-family: var(--font-primary);
+    font-size: 40px;
+    background: var(--color-primary);
+    border-radius: 20px;
+    text-transform: uppercase;
+
+    transition: all 600ms ease;
+}
+
+
+.cartas h5:hover{
+    background: var(--color-secondary);
+    color: white;
+    box-shadow: 5px 5px 20px rgb(0,0,0,0.2);
+    transform: translateY(-3%); 
+
+}
+.cartas p{
+    padding-top: 10px;
+    font-size: 20px;
+    font-family: var(--font-secondary);
+    text-align: center;
+    display: block;
+    margin-bottom: 60px;
+}
+
+.cartas .card{
+    border-radius: 10px;
+    background-color: var(--color-secondary);
+    color: white;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px rgb(0,0,0,0.2);
+    cursor: default;
+    transition: all 600ms ease;
+
+}
+
+.cartas .card:hover{
+    background: white;
+    color: #212121;
+    box-shadow: 5px 5px 20px rgba(136, 136, 136, 0.2);
+    transform: translateY(-3%); 
+
+}
+
+
+
+
+/*Seccion sobre nosotros*/
+.sobre{
+    width: 100%;
+    position: relative;
+    padding: 150px 0;
+}
+
+.sobre img{
+    width: 500px;
+    max-width:80%;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.sobre h2{
+    color: white;
+    padding-top: -10px;
+    font-family: var(--font-primary);
+    font-size: 60px;
+    text-transform: uppercase;
+    border-bottom: 6px solid var(--color-secondary);
+    display: inline-block;
+    margin-bottom: 60px;
+}
+
+.sobre h3{
+    color: white;
+    padding-top: 50px;
+    font-family: var(--font-primary);
+    font-size: 40px;
+    border-bottom: 6px solid var(--color-secondary);
+    display: inline-block;
+    margin-bottom: 60px;
+}
+
+
+.sobre p{
+    font-family: var(--font-secondary);
+      color: white;
+  }
+.sobre a{
+    padding: 10px 50px;
+    background: #0b132b;
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 200;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 50px;
+    max-width: 250px;
+    transition: .3s;
+}
+
+/*Seccion Clases*/
+.Clases h2{
+    color: var(--color-primary);
+    padding-top: -10px;
+    font-family: var(--font-primary);
+    font-size: 60px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 60px;    
+}
+
+.Clases img{
+    height: 50% auto;
+}
+
+.Clases .card-body{
+    background: var(--color-secondary);
+    border-radius: 8px;
+    width: 100%;
+
+}
+
+
+.Clases .card-body h5{
+    font-family: var(--font-secondary);
+    font-size: 18px;
+    color: var(--font-color);
+    text-align: center;
+    font-weight: 600;
+
+}
+
+
+.Clases .card-title{
+    font-family: var(--font-primary);
+    font-size: 46px; 
+    text-transform: uppercase;
+    color: var(--font-color);
+
+}
+
+.Clases .card-text{
+    font-family: var(--font-secondary);
+    font-size: 18px;
+    color: var(--font-color);
+
+}
